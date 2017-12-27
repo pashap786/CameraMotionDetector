@@ -15,6 +15,7 @@ public class MotionDetectorTest {
 		System.out.println("Detecting motion");
 		MotionDetector md = new MotionDetector();
 		try {
+			md.startDetection();
 			System.in.read();
 		} catch (IOException e) {
 			e.printStackTrace();
