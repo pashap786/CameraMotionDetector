@@ -18,8 +18,7 @@ public class MotionDetector implements WebcamMotionListener {
 	public MotionDetector() {
 		detector = new WebcamMotionDetector(Webcam.getDefault());
 		detector.setInterval(500); // one check per 500 ms
-		detector.addMotionListener(this);
-		
+		detector.addMotionListener(this);		
 	}
 	
 	public void startDetection() {
